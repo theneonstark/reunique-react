@@ -6,7 +6,7 @@ const AboutUsHeading = () => {
       <div className="about-herosection flex flex-col items-start gap-4 justify-center h-full max-w-screen-xl mx-auto text-lg leading-relaxed">
         <h1 className="about-heading tracking-widest text-4xl">About us</h1>
         <p>
-          PeUnique, a platform by NikatBy, emerges as a pioneering force in India's payment and API banking landscape.
+          PeUnique, a platform by NikatBy, emergess as a pioneering force in India's payment and API banking landscape.
           Our comprehensive suite of solutions empowers businesses across the nation to seamlessly accept payments and
           facilitate payouts through an extensive network of over 180 payment modes, all streamlined through a simple
           integration process.
