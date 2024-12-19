@@ -1,22 +1,21 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AboutUs from "../components/aboutus-component/aboutus";
 import Header from "../components/header";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-import Support from "../pages/Support";
+import Contact from "../components/contact";
+import Support from "../components/support";
+import Login from "../components/login"
+import SignIn from "../components/signin"
 
 const AppRouter = () => {
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/support" element={<Support />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/support" element={<Support />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/sigin' element={<SignIn />} />
+    </Routes>
   );
 };
 

@@ -1,19 +1,17 @@
-
-import React, { Component } from 'react';
-import './App.css';
-import Header from './components/header';
-import Footer from './components/footer';
-import AboutUs from './components/aboutus-component/aboutus';
+import React from "react";
+import Header from "./components/header"; // Adjust path if necessary
+import Footer from "./components/footer"; // Adjust path if necessary
+import AppRouter from "./routes/AppRouter"; // Adjust path if necessary
+import './index.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header/>
-      <AboutUs/>
+    <>
+      <Header />
+      <AppRouter />
       <Footer />
-    </div>
-
+    </>
   );
-}
+};
 
 export default App;
