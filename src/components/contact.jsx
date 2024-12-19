@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Header from "../components/header";
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,10 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div className="flex flex-col md:flex-row justify-between p-6">
+   <>
+   <Header />
+   <div className="relative flex flex-col md:flex-row justify-between p-6 align-top content-center">
+
         {/* Form Section */}
         <div className="w-full md:w-1/2">
           <form
@@ -155,6 +158,8 @@ class ContactForm extends Component {
           </div>
         </div>
       </div>
+   </>
+     
     );
   }
 }

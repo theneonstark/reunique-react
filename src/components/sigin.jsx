@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import validator from "validator";
 
 export default function SignIn() {
@@ -44,11 +44,11 @@ export default function SignIn() {
 
   return (
     <React.Fragment>
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <div className="flex items-center justify-center min-h-screen bg-bg-color">
         <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
           {/* Form Title */}
-          <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-            Sign In
+          <h1 className="text-4xl font-bold text-gray-800 text-center mb-6">
+          Enter Your Account
           </h1>
 
           {/* Form Start */}
@@ -59,7 +59,7 @@ export default function SignIn() {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
             </div>
 
@@ -71,7 +71,7 @@ export default function SignIn() {
                 value={email}
                 onChange={validateEmail}
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
               {/* Display Email Error Message */}
               {emailError && (
@@ -87,7 +87,7 @@ export default function SignIn() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
-                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
               {/* Display Password Error Message */}
               {passwordError && (
@@ -98,16 +98,16 @@ export default function SignIn() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition duration-300"
+              className="login py-3 px-8 bg-transparent border-2 border-secondary-color text-secondary-color text-xl rounded-full transition-colors duration-300 hover:bg-secondary-color hover:text-white"
             >
-              Register
+           Sign in
             </button>
           </form>
 
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
             Already have an account?{" "}
-            {/* <Link to="/login" className="text-purple-600">Login</Link> */}
+             <Link to="/login" className="text-black">Login</Link> 
           </p>
         </div>
       </div>

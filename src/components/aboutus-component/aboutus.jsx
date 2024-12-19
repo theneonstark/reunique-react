@@ -9,7 +9,7 @@ const AboutUs = ()=>{
          <AboutUsHeading/>
         </div>
 
-        <Footer/>
+    
         </>
     )
 }

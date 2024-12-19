@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import validator from "validator";
 
 export default function Login() {
@@ -33,11 +34,11 @@ export default function Login() {
 
   return (
     <React.Fragment>
-      <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <div className="flex items-center justify-center min-h-screen bg-bg-color">
         <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
           {/* Form Title */}
-          <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-            Login
+          <h1 className="text-4xl font-bold text-gray-800 text-center mb-6">
+            Login to Your Account
           </h1>
 
           {/* Form Start */}
@@ -50,7 +51,7 @@ export default function Login() {
                 value={email}
                 onChange={validateEmail}
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
               {/* Email Error Message */}
               {emailError && (
@@ -66,14 +67,14 @@ export default function Login() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
-                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition duration-300"
+              className="login py-3 px-8 bg-transparent border-2 border-secondary-color text-secondary-color text-xl rounded-full transition-colors duration-300 hover:bg-secondary-color hover:text-white"
             >
               Login
             </button>
@@ -81,7 +82,7 @@ export default function Login() {
 
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
-            Don't have an account? <a href="/signup" className="text-purple-600">Sign Up</a>
+            Don't have an account? <Link to = "/sigin" className="text-black">Sign Up   </Link>
           </p>
         </div>
       </div>
