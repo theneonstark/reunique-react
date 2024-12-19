@@ -1,16 +1,17 @@
 
+import React, { Component } from 'react';
 import './App.css';
-import Login from './components/login';
-import SignIn from './components/sigin';
-import ContactForm from './components/contact';
+import Footer from './components/footer';
+import AboutUs from './components/aboutus-component/aboutus';
 
-import './index.css'
-function App() {
+const App = () => {
   return (
- [<Login/>,
+    <div className="App">
+      <Footer />[<Login/>,
   <SignIn/>,
   <ContactForm/>,
  ]
+    </div>
 
   );
 }
