@@ -9,7 +9,7 @@ const Header = () => {
           Pe<span className="text-primary-color">Unique</span>
         </h1>
         <nav className="flex">
-          <Link to="/" className="text-2xl ml-8 hover:text-secondary-color">
+          {/* <Link to="/" className="text-2xl ml-8 hover:text-secondary-color">
             Home
           </Link>
           <Link to="/about" className="text-2xl ml-8 hover:text-secondary-color">
@@ -20,7 +20,7 @@ const Header = () => {
           </Link>
           <Link to="/support" className="text-2xl ml-8 hover:text-secondary-color">
             Support
-          </Link>
+          </Link> */}
         </nav>
         <div className="btns flex gap-4">
           <a href="#" className="btn py-3 px-8 bg-primary-color text-btn-text-color text-xl rounded-full transition-colors duration-300 hover:bg-secondary-color hover:text-white">
