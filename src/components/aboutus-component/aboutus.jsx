@@ -9,10 +9,7 @@ const AboutUs = ()=>{
          <AboutUsHeading/>
         </div>
 
-<<<<<<< HEAD
     
-=======
->>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661
         </>
     )
 }

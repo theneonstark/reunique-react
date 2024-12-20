@@ -29,17 +29,6 @@ class ContactForm extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-   <>
-   <Header />
-   <div className="relative flex flex-col md:flex-row justify-between p-6 align-top content-center">
-
-        {/* Form Section */}
-        <div className="w-full md:w-1/2">
-          <form
-            className="contact-form bg-white p-6 rounded-lg shadow-md"
-            onSubmit={this.handleSubmit} // Bind handleSubmit
-=======
       <div className="flex flex-col md:flex-row justify-between p-6 pt-32 space-y-8 md:space-y-0 md:space-x-8  bg-gradient-to-br from-primary-color via-secondary-color to-tertiary-color rounded-lg shadow-xl">
       {/* Form Section */}
       <div
@@ -126,7 +115,6 @@ class ContactForm extends Component {
           <button
             type="submit"
             className="w-full bg-primary-color text-btn-text-color p-3 rounded-md hover:bg-secondary-color transition-all"
->>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661
           >
             Submit
           </button>
@@ -200,16 +188,16 @@ class ContactForm extends Component {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-   </>
+
+  
      
-=======
+
     </div>
     
     
     
     
->>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661
+
     );
   }
 }

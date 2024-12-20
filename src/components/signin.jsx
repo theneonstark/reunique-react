@@ -107,11 +107,7 @@ export default function SignIn() {
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
             Already have an account?{" "}
-<<<<<<< HEAD:src/components/sigin.jsx
              <Link to="/login" className="text-black">Login</Link> 
-=======
-             <Link to="/login" className="text-black">Login</Link>
->>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661:src/components/signin.jsx
           </p>
         </div>
       </div>

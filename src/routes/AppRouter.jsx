@@ -6,7 +6,8 @@ import Contact from "../components/contact";
 import Support from "../components/support";
 import Login from "../components/login"
 import SignIn from "../components/signin"
-
+import FAQs from "../components/faqs"
+import RaiseTicket from "../components/RaiseTicket";
 const AppRouter = () => {
   return (
     <Routes>
@@ -15,6 +16,8 @@ const AppRouter = () => {
       <Route path="/support" element={<Support />} />
       <Route path='/login' element={<Login />} />
       <Route path='/sigin' element={<SignIn />} />
+      <Route path='/faqs' element={<FAQs/>} />
+      <Route path='/raiseTicket' element={<RaiseTicket/>} />
     </Routes>
   );
 };
