@@ -1,47 +1,47 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import validator from "validator";
-
+ 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState('');
-
+ 
   const validateEmail = (e) => {
     const email = e.target.value;
     setEmail(email);
-
+ 
     if (validator.isEmail(email)) {
       setEmailError('Valid Email :)');
     } else {
       setEmailError('Enter a valid email!');
     }
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();  // Prevent default form submission
-
+ 
     // Check if email is valid
     if (!validator.isEmail(email)) {
       setEmailError('Please enter a valid email address');
     } else {
       setEmailError('');
     }
-
+ 
     // Check if password is entered
     if (password === '') {
       setPasswordError('Password is required');
     } else {
       setPasswordError('');
     }
-
+ 
     if (email && password) {
       // Perform registration logic (e.g., send data to backend)
       alert('Registration Successful!');
     }
   };
-
+ 
   return (
     <React.Fragment>
       <div className="flex items-center justify-center min-h-screen bg-bg-color">
@@ -50,7 +50,7 @@ export default function SignIn() {
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-6">
           Enter Your Account
           </h1>
-
+ 
           {/* Form Start */}
           <form onSubmit={handleSubmit}>
             {/* Name Field */}
@@ -62,7 +62,7 @@ export default function SignIn() {
                 className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
             </div>
-
+ 
             {/* Email Field */}
             <div className="mb-4">
               <input
@@ -78,7 +78,7 @@ export default function SignIn() {
                 <p className="text-sm text-red-500 mt-2">{emailError}</p>
               )}
             </div>
-
+ 
             {/* Password Field */}
             <div className="mb-4">
               <input
@@ -94,7 +94,7 @@ export default function SignIn() {
                 <p className="text-sm text-red-500 mt-2">{passwordError}</p>
               )}
             </div>
-
+ 
             {/* Submit Button */}
             <button
               type="submit"
@@ -103,11 +103,15 @@ export default function SignIn() {
            Sign in
             </button>
           </form>
-
+ 
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
             Already have an account?{" "}
+<<<<<<< HEAD:src/components/sigin.jsx
              <Link to="/login" className="text-black">Login</Link> 
+=======
+             <Link to="/login" className="text-black">Login</Link>
+>>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661:src/components/signin.jsx
           </p>
         </div>
       </div>

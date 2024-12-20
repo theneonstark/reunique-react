@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React, { Component } from 'react';
 import './App.css';
@@ -14,7 +15,22 @@ const App = () => {
 <AppRouter />
     </div>
 
+=======
+import React from "react";
+import Header from "./components/header"; // Adjust path if necessary
+import Footer from "./components/footer"; // Adjust path if necessary
+import AppRouter from "./routes/AppRouter"; // Adjust path if necessary
+import './index.css';
+
+const App = () => {
+  return (
+    <>
+      <Header />
+      <AppRouter />
+      <Footer />
+    </>
+>>>>>>> 848b7bfdcabad5bcee5f83a2c75c368b54f75661
   );
-}
+};
 
 export default App;

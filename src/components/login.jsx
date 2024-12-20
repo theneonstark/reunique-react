@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import validator from "validator";
-
+ 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
  // const [isFormValid, setIsFormValid] = useState(false);
-
+ 
   const validateEmail = (e) => {
     const email = e.target.value;
     setEmail(email);
-
+ 
     if (validator.isEmail(email)) {
       setEmailError('Valid Email :)');
     } else {
       setEmailError('Enter valid Email!');
     }
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+ 
     // Check if email and password are valid before submitting
     if (!validator.isEmail(email)) {
       setEmailError('Enter valid Email!');
@@ -31,7 +31,7 @@ export default function Login() {
       alert('Login Successful!');
     }
   };
-
+ 
   return (
     <React.Fragment>
       <div className="flex items-center justify-center min-h-screen bg-bg-color">
@@ -40,7 +40,7 @@ export default function Login() {
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-6">
             Login to Your Account
           </h1>
-
+ 
           {/* Form Start */}
           <form onSubmit={handleSubmit}>
             {/* Email Field */}
@@ -58,7 +58,7 @@ export default function Login() {
                 <p className="text-sm text-red-500 mt-2">{emailError}</p>
               )}
             </div>
-
+ 
             {/* Password Field */}
             <div className="mb-4">
               <input
@@ -70,7 +70,7 @@ export default function Login() {
                 className="w-full p-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:btn-text-color"
               />
             </div>
-
+ 
             {/* Submit Button */}
             <button
               type="submit"
@@ -79,7 +79,7 @@ export default function Login() {
               Login
             </button>
           </form>
-
+ 
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
             Don't have an account? <Link to = "/sigin" className="text-black">Sign Up   </Link>
