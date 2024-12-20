@@ -32,16 +32,32 @@ const Footer = () => {
           </div>
 
           {/* Company Section */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-primary-color">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="hover:text-primary-color transition-all">About Us</li>
-              <li className="hover:text-primary-color transition-all">Contact Us</li>
-              <li className="hover:text-primary-color transition-all"><Link to="/careers">Careers</Link></li>
-              <li className="hover:text-primary-color transition-all">Media and Press</li>
-              <li className="hover:text-primary-color transition-all">Pricing</li>
-            </ul>
-          </div>
+          <div className="space-y-8">
+
+  <div className="space-y-4">
+    <h3 className="text-lg font-semibold text-primary-color">Company</h3>
+    <ul className="space-y-2 text-sm">
+      <li className="hover:text-primary-color transition-all">About Us</li>
+      <li className="hover:text-primary-color transition-all">Contact Us</li>
+      <li className="hover:text-primary-color transition-all">
+        <Link to="/careers">Careers</Link>
+      </li>
+      <li className="hover:text-primary-color transition-all">Media and Press</li>
+      <li className="hover:text-primary-color transition-all">Pricing</li>
+    </ul>
+  </div>
+
+  <div className="space-y-4">
+    <h3 className="text-lg font-semibold text-primary-color">Legal</h3>
+    <ul className="space-y-2 text-sm">
+      <li className="hover:text-primary-color transition-all">Disclaimer</li>
+      <li className="hover:text-primary-color transition-all">Privacy Policy</li>
+      <li className="hover:text-primary-color transition-all">Grievance Redressal</li>
+      <li className="hover:text-primary-color transition-all">Terms & Conditions</li>
+     
+    </ul>
+  </div>
+</div>
 
           {/* Support & Social Section */}
           <div className="space-y-6">
