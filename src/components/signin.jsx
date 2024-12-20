@@ -107,7 +107,7 @@ export default function SignIn() {
           {/* Already Registered? */}
           <p className="mt-4 text-sm text-center text-gray-500">
             Already have an account?{" "}
-             <Link to="/login" className="text-black">Login</Link>
+             <Link to="/login" className="text-black">Login</Link> 
           </p>
         </div>
       </div>

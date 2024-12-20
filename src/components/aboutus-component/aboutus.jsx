@@ -9,6 +9,7 @@ const AboutUs = ()=>{
          <AboutUsHeading/>
         </div>
 
+    
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-bg-color text-text-color">
@@ -48,8 +48,8 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold text-primary-color">Support</h3>
               <ul className="mt-4 space-y-2 text-sm">
-                <li className="hover:text-primary-color transition-all">FAQs</li>
-                <li className="hover:text-primary-color transition-all">Raise a Ticket</li>
+                <li className="hover:text-primary-color transition-all"><Link to ="/faqs">FAQs </Link></li>
+                <li className="hover:text-primary-color transition-all"><Link to ="/raiseTicket">Raise a Ticket </Link></li>
               </ul>
             </div>
             <div>

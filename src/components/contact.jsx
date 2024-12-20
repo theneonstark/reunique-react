@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Header from "../components/header";
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -188,11 +188,16 @@ class ContactForm extends Component {
           </div>
         </div>
       </div>
+
+  
+     
+
     </div>
     
     
     
     
+
     );
   }
 }

@@ -1,3 +1,5 @@
+// src/index.js
+
 import React from "react";
 import ReactDOM from "react-dom/client"; // Import ReactDOM from 'react-dom/client' for React 18
 import { BrowserRouter } from "react-router-dom";
