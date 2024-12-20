@@ -38,7 +38,7 @@ const faqData = [
     },
     {
         question: "How can I contact   PeUnique?",
-        answer: "For sales enquiries signup with your details at https://  PeUnique.in/sign-up/ and our Sales Team will get in touch with you."
+        answer: "For sales enquiries signup with your details at https://  PeUnique.com/sign-up/ and our Sales Team will get in touch with you."
     },
     {
         question: "Where do I seek support from   PeUnique?",
