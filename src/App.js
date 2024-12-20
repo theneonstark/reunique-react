@@ -9,11 +9,17 @@ import './index.css';
 const App = () => {
   return (
     <>
-    <Header />
+    <Header/>
       <AppRouter />
-      <Footer />
+      <Footer/>
     </>
   );
 };
 
 export default App;
+
+
+
+
+
+

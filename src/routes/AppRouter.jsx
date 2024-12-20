@@ -8,6 +8,7 @@ import Login from "../components/login"
 import SignIn from "../components/signin"
 import FAQs from "../components/faqs"
 import RaiseTicket from "../components/RaiseTicket";
+import Careers from "../components/careers";
 const AppRouter = () => {
   return (
     <Routes>
@@ -18,6 +19,7 @@ const AppRouter = () => {
       <Route path='/sigin' element={<SignIn />} />
       <Route path='/faqs' element={<FAQs/>} />
       <Route path='/raiseTicket' element={<RaiseTicket/>} />
+      <Route path='/careers' element={<Careers/>} />
     </Routes>
   );
 };
